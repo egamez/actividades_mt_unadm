@@ -1,6 +1,6 @@
 # Otra plantilla para elaborar actividades
 
-Esta es otra plantilla para elaborar las actividades para la [licenciatura en Matemáticas](https://www.unadmexico.mx/division-de-ciencias-exactas-ingenieria-y-tecnologia/matematicas) de la [UnADM](https://unadmexico.mx).
+Esta es otra plantilla para generar un archivo PDF con las actividades para las unidades didácticas de la [licenciatura en Matemáticas](https://www.unadmexico.mx/division-de-ciencias-exactas-ingenieria-y-tecnologia/matematicas) de la [UnADM](https://unadmexico.mx) utilizando LaTeX.
 
 ## Diferencias en esta plantilla
 
@@ -60,7 +60,7 @@ La finalidad de incluir esta información como comandos de `LaTeX` fue para util
 
 ## Ejecución
 
-La manera en como generas el archivo con tu actividad dependerá de la plataforma que este utilizando. Yo utilizo una distribución de GNU/Linux, para lo cual utilizo una instrucción como la siguiente
+La manera en como generas el archivo PDF con tu actividad dependerá de la plataforma que este utilizando. Yo utilizo una distribución de GNU/Linux, para lo cual utilizo una instrucción como la siguiente
 ```
 pdflatex activdad && biber actividad && pdflatex actividad
 ```
@@ -69,4 +69,3 @@ o alguna otra similar, dependiendo de que archivos haya modificado.
 No he tenido la necesidad de utilizar esta plantilla en [Overleaf](https://overleaf.com/) pero, debido a que se utilizan los mismos programas no deberías de tener problema alguno para compilar el proyecto (dando click en `Compilar`). Se espera agregar esta plantilla como una plantilla disponible en [Overleaf](https://overleaf.com/).
 
 No he probado esta plantilla en alguna plataforma. Estoy casi seguro de que si utilizas [MiKTeX](https://miktex.org/) en Windows no debes de tener problema alguno.
-Si utilizad [Overleaf]

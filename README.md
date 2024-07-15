@@ -66,6 +66,6 @@ pdflatex activdad && biber actividad && pdflatex actividad
 ```
 o alguna otra similar, dependiendo de que archivos haya modificado.
 
-No he tenido la necesidad de utilizar esta plantilla en [Overleaf](https://overleaf.com/) pero, debido a que se utilizan los mismos programas no deberías de tener problema alguno para compilar el proyecto (dando click en `Compilar`). Se espera agregar esta plantilla como una plantilla disponible en [Overleaf](https://overleaf.com/).
+Esta plantilla puede utilizarse en [Overleaf](https://overleaf.com/). Se está en proceso de agregar esta plantilla a la Galería de Platillas de [Overleaf](https://overleaf.com/).
 
-No he probado esta plantilla en alguna plataforma. Estoy casi seguro de que si utilizas [MiKTeX](https://miktex.org/) en Windows no debes de tener problema alguno.
+No se ha podido probar esta plantilla en alguna plataforma. Estoy casi seguro de que si utilizas [MiKTeX](https://miktex.org/), en Windows, no debes de tener problema alguno.

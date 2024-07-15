@@ -1,0 +1,99 @@
+% Configuracion del documento
+%
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage[spanish,es-tabla]{babel} % OJO
+
+\usepackage{graphicx} % Logo
+
+%
+% La fuente a utilizar
+%
+%\usepackage{mathpazo} % Palatino font
+% Tomado de la plantilla propuesta
+\usepackage[defaultfam,tabular,lining]{montserrat} %% Option 'defaultfam'
+
+%
+% Algunos paquetes
+%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{bm}
+\usepackage{csquotes}
+\usepackage{imakeidx}
+\usepackage{hyperref}
+\usepackage{wallpaper}
+\usepackage[left=2cm,top=2.5cm,right=2cm,bottom=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\decimalpoint
+
+% Teoremas, definiciones, etc.
+\newtheorem{definition}{Definición}
+\newtheorem{theorem}{Teorema}
+\newtheorem{lemma}{Lema}
+\newtheorem{proposition}{Proposición}
+
+% Color. Tomado de la plantilla propuesta
+% De la plantilla docx. Blue, Accent 1, Darker 25%: 47 84 150, #2f5496
+%\definecolor{blueunadm}{RGB}{3, 113, 192}
+\definecolor{blueunadm}{RGB}{47, 84, 150}
+
+% El título del índice
+% https://tex.stackexchange.com/a/28518
+%\renewcommand{\contentsname}{\centering\fontsize{12}{18}\selectfont{\textcolor{blueunadm}{\textbf{ÍNDICE}}}}
+\addto\captionsspanish{
+    \renewcommand{\contentsname}{\centering\fontsize{12}{18}\selectfont{\textcolor{blueunadm}{\textbf{ÍNDICE}}}}
+}
+
+% URL
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blueunadm,
+  filecolor=magenta,
+  urlcolor=blue,
+  citecolor=blue,
+  pdfauthor=\estudiante,
+  pdftitle={\estudiante. \uaprendizaje. \actividad},
+  pdfsubject={\udidactica, \actividad},
+  pdfkeywords={\udidactica, \actividad},
+}
+\urlstyle{same}
+
+%
+% extras
+%
+\author{\estudiante}
+\title{\udidactica \uaprendizaje \actividad}
+
+%
+% El encabezado de cada una de las páginas
+%
+\fancyhf{}
+
+% Elimina la línea en el encabezado
+% https://tex.stackexchange.com/a/105888
+\renewcommand{\headrulewidth}{0pt}
+
+% Ajustes para la imagen del encabezado
+\setlength{\headheight}{84pt}
+\addtolength{\topmargin}{-45pt}
+
+% La imagen del encabezado
+%https://tex.stackexchange.com/a/322163
+\chead{\makebox[\headwidth][c]{\includegraphics[width=\paperwidth]{imagenes/encabezado}}}
+\pagestyle{fancy}
+
+
+% La bibliografia, por medio de Biber
+\usepackage[
+        backend=biber,
+        citestyle=authoryear,
+        style=apa
+]{biblatex}
+\addbibresource{\referencias}
+
+\makeindex

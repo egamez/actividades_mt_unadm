@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formal Book Title Page
+% LaTeX Template
+% Version 2.0 (23/7/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Peter Wilson (herries.press@earthlink.net) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% This template can be used in one of two ways:
+%
+% 1) Content can be added at the end of this file just before the \end{document}
+% to use this title page as the starting point for your document.
+%
+% 2) Alternatively, if you already have a document which you wish to add this
+% title page to, copy everything between the \begin{document} and
+% \end{document} and paste it where you would like the title page in your
+% document. You will then need to insert the packages and document 
+% configurations into your document carefully making sure you are not loading
+% the same package twice and that there are no clashes.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\begin{titlepage} % Suppresses headers and footers on the title page
+\ThisTileWallPaper{\paperwidth}{\paperheight}{imagenes/portada}
+
+	\centering % Centre everything on the title page
+
+	\vspace*{\baselineskip} % White space at the top of the page
+
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+
+	\vspace{3.75\baselineskip} % Whitespace above the title
+
+	{\Huge\bfseries Universidad Abierta y a Distancia de México}\\ % Title
+	\vspace{0.75\baselineskip} % Whitespace above the title
+	{\LARGE \textbf{División de Ciencias Exactas, Ingeniería y Tecnología\\}} % Publisher
+	\vspace{2\baselineskip} % Whitespace above the title
+	{\LARGE \textbf{Programa educativo:} \textbf{\peducativo}} % Publisher
+
+	\vspace{2\baselineskip} % Whitespace after the title block
+
+        \begin{minipage}[c]{.7\textwidth}
+            \flushleft
+            {\Large \textbf{Semestre:} \semestre\\}
+            {\Large \textbf{Unidad didáctica:} \udidactica\\}
+            {\Large \textbf{Unidad de aprendizaje:} \uaprendizaje\\}
+            {\Large \textbf{Actividad:} \actividad\\}
+        \end{minipage}
+
+	\vspace{2\baselineskip} % Whitespace after the title block
+
+        \begin{minipage}[c]{.8\textwidth}
+            \flushleft
+            {\large Nombre del estudiante: \estudiante\\}
+            {\large Matrícula: \matricula\\}
+            {\large Grupo: \grupo\\}
+            {\large Figura académica: \facademica\\}
+            {\large Fecha de entrega: \fechaentrega\\}
+        \end{minipage}
+
+	\vspace{4\baselineskip} % Whitespace after the title block
+        {\Large \textbf{\ubicacion, a \fechaentrega}}
+
+
+	\vspace*{3\baselineskip} % Whitespace under the subtitle
+
+	\vfill % Whitespace
+
+\end{titlepage}

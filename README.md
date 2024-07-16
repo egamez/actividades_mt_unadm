@@ -59,3 +59,14 @@ Se esta en proceso de publicar esta misma plantilla en [Overleaf](https://overle
 No se ha podido probar esta plantilla en alguna plataforma. Estoy casi seguro de que si utilizas [MiKTeX](https://miktex.org/), en Windows, no debes de tener problema alguno.
 
 Un posible trabajo futuro podría ser el de definir una clase de documento para las actividades que tenga como variables de configuración los datos de identificación de la actividad.
+
+### Ejemplo
+
+En las siguientes imagenes se muestra un ejemplo de ejecución
+
+![Portada de la actividad](ejemplo/actividad-1.png)
+![El índice](ejemplo/actividad-2.png)
+![La introducción](ejemplo/actividad-3.png)
+![El desarrollo de la actividad](ejemplo/actividad-4.png)
+![Las conclusiones](ejemplo/actividad-5.png)
+![Las referencias bibliográficas](ejemplo/actividad-6.png)

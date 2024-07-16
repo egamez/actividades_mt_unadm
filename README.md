@@ -62,7 +62,7 @@ Un posible trabajo futuro podría ser el de definir una clase de documento para 
 
 ### Ejemplo
 
-En las siguientes imagenes se muestra un ejemplo de ejecución
+En las siguientes imágenes se muestra un ejemplo de ejecución
 
 ![Portada de la actividad](ejemplo/actividad-1.png)
 ![El índice](ejemplo/actividad-2.png)

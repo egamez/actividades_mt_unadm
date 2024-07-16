@@ -1,38 +1,25 @@
 # Otra plantilla para elaborar actividades
 
-Esta es otra plantilla para generar un archivo PDF con las actividades para las unidades didácticas de la [licenciatura en Matemáticas](https://www.unadmexico.mx/division-de-ciencias-exactas-ingenieria-y-tecnologia/matematicas) de la [UnADM](https://unadmexico.mx) utilizando LaTeX.
+Esta es otra plantilla para generar un archivo PDF con las actividades para las unidades didácticas de la [licenciatura en Matemáticas](https://www.unadmexico.mx/division-de-ciencias-exactas-ingenieria-y-tecnologia/matematicas) de la [UnADM](https://unadmexico.mx) utilizando LaTeX. El archivo generado será `actividad.pdf`.
 
-## Diferencias en esta plantilla
+## Motivación
 
-La principal diferencia con esta plantilla se encuentra en el manejo de la bibliografia. Mientras que en la plantilla sugerida cada una de las entradas en la bibliografía se hace utilizando el comando `\bibitem`, en esta plantilla se utiliza un paquete externo para ello, el paquete `biblatex` por medio del backend `biber`. 
+La principal motivación para trabajar con otra plantilla obedece a que la plantilla proporcionada, de manera oficial, utiliza `bibtex` para el manejo de la bibliografía y yo, estoy muy acostumbrado a utilizar el paquete` biblatex` con el cual puedo cambiar de estilo de manejo de la bibliografía cambiando únicamente una línea, de manera que cambiar al estilo de bibliografía APA es bastante simple, el cual es el solicitado para la elaboración de las actividades.
 
-Una diferencia menor se encuentra en el estilo de la organización del contenido a desarrollar separando cada una de las secciones, del documento final, en archivos, uno para cada sección. La finalidad de proceder de esta manera es para concentrarse exclusivamente en los archivos que requieren de ser editados para la elaboración de la actividad. La estructura es la siguiente:
-```
-.
-├── actividad.tex
-├── conclusiones.tex
-├── configuracion.tex
-├── desarrollo.tex
-├── imagenes
-│   ├── encabezado.png
-│   └── portada.png
-├── introduccion.tex
-├── portada.tex
-└── referencias.bib
-```
+Por otro lado, ya que únicamente requiero de concentrarme (editar) las secciones correspondientes a la introducción, el desarrollo de la actividad, las conclusiones, la bibliografía y los datos de identificación de la misma, con lo que no necesito de saber que comandos son los utilizados para definir el estilo del documento final, de manera que no necesito de navegar por el (único) archivo del que consta la plantilla para editar dichas secciones, he preferido crear archivos independientes para estas, es decir, para redactar la introducción de mi actividad sólo voy a requerir de editar el archivo [`introduccion.tex`](introduccion.tex), así para las demás secciones.
 
-en donde los archivos [`conclusiones.tex`](conclusiones.tex), [`desarrollo.tex`](desarrollo.tex), [`introduccion.tex`](introduccion.tex) y [`referencias.bib`](referencias.bib) son para desarrollar cada una de las secciones de las que constará la actividad a presentar.
+Para el caso de la sección con los datos de identificación de la actividad el proceso es ligeramente más complejo, y esto se debe a que utilizo esta misma información para incluirla en el diccionario de información del PDF generado.
 
 ## Similitudes
 
-En esta plantilla se procura mantener el mismo estilo sugerido en el archivo `.docx`, como son el color en los nombres de cada una de las secciones, la fuente (font) del documento, para lo cual se utilizaron a algunas de las instrucciones definidas en la plantilla ofrecidad para `LaTeX`.
+En esta plantilla se procura mantener el mismo estilo sugerido en el archivo `.docx`, como son el color en los nombres de cada una de las secciones, la fuente (font) del documento, para lo cual se utilizaron a algunas de las instrucciones definidas en la plantilla oficial para `LaTeX`.
 
 ## Uso de la plantilla
 
 Para el uso de la plantilla necesitaras de editar cada unos de los archivos que corresponden a cada una de las secciones requeridas para cualquier actividad, es decir, editar con contenido original los archivos [`conclusiones.tex`](conclusiones.tex), [`desarrollo.tex`](desarrollo.tex), [`introduccion.tex`](introduccion.tex) y [`referencias.bib`](referencias.bib).
 
-Además, también necesitaras de editar algunas de las primeras líneas del archivo [`actividad.tex`](actividad.tex) para definir los datos que a mostrar en la portada, las líneas son:
-```
+Además, también necesitaras de editar el archivo [`identificacion.tex`](identificacion.tex) con los datos que se mostraran en la portada, las principales líneas a modificar son:
+``
 \newcommand{\semestre}{Semestre}
 \newcommand{\udidactica}{Nombre de la materia}
 \newcommand{\uaprendizaje}{Unidad número}
@@ -56,16 +43,17 @@ por ejemplo, si la actividad a desarrollar corresponde a _la actividad 2_ de _la
 \newcommand{\ubicacion}{CDMX}
 ```
 
-La finalidad de incluir esta información como comandos de `LaTeX` fue para utilizar esta misma información para también generar la meta-información del PDF.
-
 ## Ejecución
 
 La manera en como generas el archivo PDF con tu actividad dependerá de la plataforma que este utilizando. Yo utilizo una distribución de GNU/Linux, para lo cual utilizo una instrucción como la siguiente
 ```
-pdflatex activdad && biber actividad && pdflatex actividad
+pdflatex activdad
+biber actividad
+pdflatex actividad
+pdflatex actividad
 ```
-o alguna otra similar, dependiendo de que archivos haya modificado.
+o alguna otra variación, dependiendo de si alguna referencia se ha agregado o cambiado.
 
-Esta plantilla puede utilizarse en [Overleaf](https://overleaf.com/). Se está en proceso de agregar esta plantilla a la Galería de Platillas de [Overleaf](https://overleaf.com/).
+Se esta en proceso de publicar esta misma plantilla en [Overleaf](https://overleaf.com/), mientras tanto es posible cargar todos los archivos a un proyecto y compilarlo en dicha plataforma.
 
 No se ha podido probar esta plantilla en alguna plataforma. Estoy casi seguro de que si utilizas [MiKTeX](https://miktex.org/), en Windows, no debes de tener problema alguno.

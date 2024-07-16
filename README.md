@@ -30,16 +30,16 @@ Además, también necesitaras de editar el archivo [`identificacion.tex`](identi
 \newcommand{\facademica}{Nombre de la figura académica}
 \newcommand{\ubicacion}{Ubicación}
 ```
-por ejemplo, si la actividad a desarrollar corresponde a _la actividad 2_ de _la unidad 1_ de la materia _Álgebra moderna I_ (la cual corresponde al _séptimo_ semestre), en el grupo _MT-MAMD1-2601-B2-001_, impartida por el _Dr. Juanito Pérez_, y tu nombre es _Pepito Pérez_ de la _CDMX_ con matrícula _ES291235678_, entonces el texto modificado se verá como el siguiente:
+por ejemplo, si la actividad a desarrollar corresponde a _la actividad 2_ de _la unidad 1_ de la materia _Álgebra moderna I_ (la cual corresponde al _séptimo_ semestre), en el grupo _MT-MAMD1-5001-B2-001_, impartida por el _Dr. Y_, y tu nombre es _X_ de la _CDMX_ con matrícula _ES123456789_, entonces el texto modificado se verá como el siguiente:
 ```
 \newcommand{\semestre}{Séptimo}
 \newcommand{\udidactica}{Álgebra moderna I}
 \newcommand{\uaprendizaje}{Unidad 1}
 \newcommand{\actividad}{Actividad 2. Problemas}
-\newcommand{\estudiante}{Pepito Pérez}
-\newcommand{\matricula}{ES291235678}
-\newcommand{\grupo}{MT-MAMD1-2901-B2-001}
-\newcommand{\facademica}{Dr. Juanito Pérez}
+\newcommand{\estudiante}{X}
+\newcommand{\matricula}{ES123456789}
+\newcommand{\grupo}{MT-MAMD1-5001-B2-001}
+\newcommand{\facademica}{Dr. Y}
 \newcommand{\ubicacion}{CDMX}
 ```
 

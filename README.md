@@ -19,7 +19,7 @@ En esta plantilla se procura mantener el mismo estilo sugerido en el archivo `.d
 Para el uso de la plantilla necesitaras de editar cada unos de los archivos que corresponden a cada una de las secciones requeridas para cualquier actividad, es decir, editar con contenido original los archivos [`conclusiones.tex`](conclusiones.tex), [`desarrollo.tex`](desarrollo.tex), [`introduccion.tex`](introduccion.tex) y [`referencias.bib`](referencias.bib).
 
 Además, también necesitaras de editar el archivo [`identificacion.tex`](identificacion.tex) con los datos que se mostraran en la portada, las principales líneas a modificar son:
-``
+```
 \newcommand{\semestre}{Semestre}
 \newcommand{\udidactica}{Nombre de la materia}
 \newcommand{\uaprendizaje}{Unidad número}

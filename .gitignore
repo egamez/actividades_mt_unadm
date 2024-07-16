@@ -1,3 +1,6 @@
+## No incluyas los cambios del directorio ejemplo
+ejemplo/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

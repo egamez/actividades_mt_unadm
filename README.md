@@ -54,7 +54,7 @@ pdflatex actividad
 ```
 o alguna otra variación, dependiendo de si alguna referencia se ha agregado o cambiado.
 
-Se esta en proceso de publicar esta misma plantilla en [Overleaf](https://overleaf.com/), mientras tanto es posible cargar todos los archivos a un proyecto y compilarlo en dicha plataforma.
+Esta plantilla ya se encuentra dentro de las plantillas en [Overleaf.com](https://www.overleaf.com/latex/templates/actividades-para-la-licenciatura-en-matematicas-unadm/xfnjrtnpzsnt).
 
 No se ha podido probar esta plantilla en alguna plataforma. Estoy casi seguro de que si utilizas [MiKTeX](https://miktex.org/), en Windows, no debes de tener problema alguno.
 
